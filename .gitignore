@@ -28,3 +28,4 @@ dump.rdb
 config/database.yml
 .env
 *.sqlite
+*.sqlite3
