@@ -1,0 +1,27 @@
+.sign_in {
+  background-color: #4A5D6B;
+  padding: 20px;
+
+  .field {
+    margin-bottom: 5px;
+  }
+
+  .fieldText {
+    input {
+      width: 100%;
+    }
+
+  }
+
+  .actions {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    input {
+      background-color: #EA6C2D;
+      color: #fff;
+      border:none;
+    }
+
+  }
+}
