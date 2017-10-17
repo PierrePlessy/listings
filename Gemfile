@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sqlite3'
 #gem 'carrierwave'
 #gem 'route_translator'
-#gem 'devise'
+gem 'devise'
 #gem 'rails_admin', '~> 1.0'
 #gem 'fog'
 gem 'haml-rails'
@@ -58,4 +58,3 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'byebug', platform: :mri
 end
-
