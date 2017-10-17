@@ -21,7 +21,7 @@ class ListingsController < ApplicationController
     @listing = Listing.new(listing_params)
 
     if @listing.save
-      redirect_to listing_path
+      redirect_to listings_path
     else
       render template: '/listings/new'
     end
