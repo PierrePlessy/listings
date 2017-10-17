@@ -1,0 +1,40 @@
+<% @listings.each do |element| %>
+  <div class="listing">
+    <h3><%= element.title%></h3>
+    <span class="date"><%= element.created_at %></span>
+    <span class="category"><%= element.category_id%></span>
+    <p><%= element.description%></p>
+    <div class="btn btn-primary pull-right"><%= t('contact')%></div>
+    <div class="price">€<%= element.price%></div>
+
+  </div>
+<% end %>
+
+
+
+
+
+
+<div class="listing">
+
+  <h3>Ordinateur Thoshiba</h3>
+  <span class="date">13/07/2017</span>
+  <span class="category">Computer</span>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium lectus ac blandit hendrerit. Vestibulum quis urna ac odio luctus lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris malesuada, libero sit amet eleifend congue, neque nibh feugiat augue, vulputate mollis ex erat sit amet nulla. Quisque consequat blandit purus, rutrum bibendum mi. Morbi sed ultrices mi. Sed iaculis, mauris vitae pretium congue, ipsum velit efficitur risus, eu tincidunt enim sapien pharetra justo. Nam eu sagittis lacus. Vivamus vestibulum tristique magna. Suspendisse efficitur, est sit amet tristique gravida, purus felis efficitur massa, eu fringilla lacus orci ut ex. Quisque mattis, dolor vel interdum volutpat, enim metus condimentum erat, eget gravida lacus ligula suscipit odio. Sed facilisis nibh quis rutrum molestie. Donec eu ipsum mattis, cursus mauris nec, porta eros. Nulla facilisi. Quisque non condimentum odio.</p>
+  <div class="btn btn-primary pull-right"><%= t('contact')%></div>
+  <div class="price">€17,00</div>
+
+</div>
+
+<div class="listing">
+
+  <h3>Ordinateur Thoshiba</h3>
+  <span class="date">13/07/2017</span>
+  <span class="category">Computer</span>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium lectus ac blandit hendrerit. Vestibulum quis urna ac odio luctus lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris malesuada, libero sit amet eleifend congue, neque nibh feugiat augue, vulputate mollis ex erat sit amet nulla. Quisque consequat blandit purus, rutrum bibendum mi. Morbi sed ultrices mi. Sed iaculis, mauris vitae pretium congue, ipsum velit efficitur risus, eu tincidunt enim sapien pharetra justo. Nam eu sagittis lacus. Vivamus vestibulum tristique magna. Suspendisse efficitur, est sit amet tristique gravida, purus felis efficitur massa, eu fringilla lacus orci ut ex. Quisque mattis, dolor vel interdum volutpat, enim metus condimentum erat, eget gravida lacus ligula suscipit odio. Sed facilisis nibh quis rutrum molestie. Donec eu ipsum mattis, cursus mauris nec, porta eros. Nulla facilisi. Quisque non condimentum odio.</p>
+  <div class="btn btn-primary pull-right"><%= t('contact')%></div>
+  <div class="price">€17,00</div>
+
+</div>

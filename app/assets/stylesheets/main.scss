@@ -99,18 +99,24 @@ form.busy {
 }
 .listing {
   border-bottom: 1px solid #aaa;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   h3 {
     font-size: 40px;
   }
   p{
     color: #000;
-    &.date {
-      color: #aaa;
-    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .date {
+    color: #aaa;
   }
   .category {
     margin-left: 10px;
+    background-color: grey;
+    padding: 2px 7px 2px 7px;
+    border-radius: 5px;
+    color: #fff;
   }
   .price {
     color: #000;
