@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'sqlite3'
 #gem 'carrierwave'
-#gem 'route_translator'
+gem 'route_translator'
 gem 'devise'
 #gem 'rails_admin', '~> 1.0'
 #gem 'fog'

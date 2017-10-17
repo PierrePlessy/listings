@@ -182,6 +182,9 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
+    route_translator (5.5.0)
+      actionpack (>= 5.0.0.1, < 5.2)
+      activesupport (>= 5.0.0.1, < 5.2)
     ruby_parser (3.10.1)
       sexp_processor (~> 4.9)
     rubyzip (1.2.1)
@@ -260,6 +263,7 @@ DEPENDENCIES
   minitest-rails-capybara
   puma (~> 3.0)
   rails
+  route_translator
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
