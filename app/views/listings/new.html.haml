@@ -19,3 +19,16 @@
       .form-group
         = f.label :category_id, class: 'form-label required'
       -#   = f.collection_select :category_id, Category.all, :id, :name, {}, {class: 'form-control'}
+      -# .form-group
+      -#   = f.label :description, class: 'form-label required'
+      -#   = f.text_field :description, class: 'form-control'
+      -# .form-group
+      -#   = f.label :picture, class: 'form-label required'
+      -#   = f.text_field :picture, class: 'form-control'
+      -# .form-group
+      -#   = f.label :price, class: 'form-label required'
+      -#   = f.text_field :price, class: 'form-control'
+
+      .form-group
+        %span= t('required_field')
+        = f.submit t('save'), class: 'btn btn-primary pull-right'
