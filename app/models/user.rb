@@ -10,4 +10,8 @@ class User < ApplicationRecord
   def is_admin?
     role.name == "admin"
   end
+
+  def full_name
+    first_name + " " + last_name
+  end
 end

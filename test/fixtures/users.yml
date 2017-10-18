@@ -5,7 +5,7 @@
 # below each fixture, per the syntax in the comments below
 #
 seller:
-  first_name: 'seller'
-  last_name: 'seller last name'
+  first_name: 'john'
+  last_name: 'doe'
   email: 'seller@domain.com'
   role: user_role

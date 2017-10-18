@@ -10,4 +10,8 @@ describe User do
     assert_equal false, @user.is_admin?
   end
 
+  it "returns full name" do
+    assert_equal "john doe", @user.full_name
+  end
+
 end
