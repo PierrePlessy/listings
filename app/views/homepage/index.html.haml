@@ -1,7 +1,9 @@
 .row
   .col-xs-8.col-xs-offset-2.search
     %h2= t('main_baseline')
-    .input-group
-      %input{type: 'text', class: 'form-control', placeholder: t('search_placeholder')}
-      %span{class: 'input-group-btn'}
-        %button{class: 'btn btn-success', type: 'button'}= t('search')
+    = form_tag listings_path, method: :get, class:'form form-hroizontal'  do
+      .form-group
+        .col-xs-10
+          = text_field_tag 'keywords', nil, class: 'form-control', placeholder: t('search_placeholder')
+        .col-xs-2
+          = submit_tag t('search'), class: 'btn btn-success'
