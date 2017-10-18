@@ -1,8 +1,7 @@
 class ListingsController < ApplicationController
 
   def index
-    # @listings = Listing.search(params)
-    @listings = Listing.all
+    @listings = Listing.search(params)
 
     # respond_to do |format|
     #   format.html
