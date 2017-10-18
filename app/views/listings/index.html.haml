@@ -1,0 +1,18 @@
+- @listings.each do |element|
+  .col-xs-12.listing
+    %h3= element.title
+    %span.date= element.created_at
+    -# %span.category= element.category_id
+    %span.category= 'exemple'
+    %br/
+    .row
+      .col-xs-2
+        %a{href: listing_path(element)}
+          = image_tag element.picture, width: 300, class: 'img-responsive'
+      .col-xs-10
+        %p= element.description
+        .clearfix
+          %br/
+    .btn.btn-primary.pull-right= t('contact')
+    .price
+      €#{element.price}
