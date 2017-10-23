@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     resources :listings
     resources :pages, only: [:show]
 
+    post '/listings/contact', to: 'listings#contact', as: 'listing_contact'
+
     namespace :account do
       resources :user, only: [:index, :update]
       resources :contacts , only: [:index]

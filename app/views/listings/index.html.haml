@@ -12,6 +12,8 @@
         %p= element.description
         .clearfix
           %br/
-    .btn.btn-primary.pull-right= t('contact')
+    = link_to t('contact'), new_user_session_path, class: "btn btn-primary pull-right", data: {do: 'showContactModal', user: "#{current_user.try(:id)}", id: element.id}
     .price
       €#{element.price}
+
+= render partial: 'modals/contact'

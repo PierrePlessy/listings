@@ -1,3 +1,6 @@
-class Account::ontactsController < Account::AccountController
+class Account::ContactsController < Account::AccountController
+
+  def index
+  end
 
 end
