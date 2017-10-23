@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     root 'homepage#index'
 
     resources :listings
+    resources :pages, only: [:show]
   end
   #apipie
 end
