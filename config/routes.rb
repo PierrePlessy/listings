@@ -14,9 +14,9 @@ Rails.application.routes.draw do
     namespace :account do
       resources :user, only: [:index, :update]
       resources :contacts , only: [:index]
-      resources : :messages, only: [:index]
+      resources :messages, only: [:index]
     end
-    
+
   end
   #apipie
 end
