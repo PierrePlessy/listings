@@ -153,7 +153,7 @@ form.busy {
 }
 .footer {
   text-align: center;
-  border-top: 1px solid #000;
+  border-top: 1px solid #fff;
   padding-top: 10px;
   margin-top: 200px;
 }
@@ -162,13 +162,13 @@ form.busy {
 }
 .footer li {
   display: inline-block;
-  border-left: 1px solid #000;
+  border-left: 1px solid #fff;
   padding-left: 10px;
   &:first-child {
     border-left: 0;
   }
 }
 .footer li a{
-  color: #000;
+  color: #fff;
   margin-right: 10px;
 }
