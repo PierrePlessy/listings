@@ -7,4 +7,7 @@ class Account::UserController < Account::AccountController
   def update
     @user = User.find(current_user)
 
+    
+  end
+
 end

@@ -13,7 +13,7 @@
             %option{value: url_for(locale: loc.to_s), selected: I18n.locale == loc}
               = loc.upcase
         - if current_user
-          /%a{href: account_contact_path, class: 'my-account pull-right'} = t('my_account')
+          %a{href: account_contact_path, class: 'my-account pull-right'} = t('my_account')
         - else
           %a{href: new_user_session_path, class: 'my-account pull-right'}
             = t('sin_in')
