@@ -1,0 +1,28 @@
+.row
+  .col-xs-6.well
+    = form_for [:account, @user], class: 'form', html: {multipart: true} do |u|
+      .form-group
+        = u.label :email, class: 'form-label required'
+        = u.email_field :email, class: 'form-control'
+      .form-group
+        = u.label :first_name, class: 'form-label required'
+        = u.text_field :first_name, class: 'form-control'
+      .form-group
+        = u.label :last_name, class: 'form-label required'
+        = u.text_field :last_name, class: 'form-control'
+
+      .form-group
+        = u.submit t('save'), class: 'btn btn-primary pull-right'
+
+
+  .col-xs-5.col-xs-offset-1.well
+    = form_for [:account, @user], class: 'form', html: {multipart: true} do |u|
+      .form-group
+        = u.label :password, class: 'form-label required'
+        = u.password_field :password, class: 'form-control'
+      .form-group
+        = u.label :password_confirmation, class: 'form-label required'
+        = u.password_field :password_confirmation, class: 'form-control'
+
+      .form-group
+        = u.submit t('save'), class: 'btn btn-primary pull-right'

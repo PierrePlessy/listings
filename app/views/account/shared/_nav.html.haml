@@ -1,7 +1,7 @@
 %ul.nav.nav-pills
+  %li{role: "presentation", class: "active"}
+    %a{href: '/account/contacts'}= t('account.navs.my_contacts')
   %li{role: "presentation"}
-    %a= t('account.navs.my_contacts')
+    %a{href: '/account/messages'}= t('account.navs.my_messages')
   %li{role: "presentation"}
-    %a= t('account.navs.my_messages')
-  %li{role: "presentation"}
-    %a= t('account.navs.my_profile')
+    %a{href: account_user_index_path}= t('account.navs.my_profile')
