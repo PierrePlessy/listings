@@ -17,6 +17,16 @@ $(document).on('turbolinks:load', function(){
     }
   });
 
+  $("[data-do='showChatModal']").click(function(e) {
+    if($(this).data('user') != ''){
+      e.preventDefault();
+      initModal(this);
+      $("[data-is='chatModal']").modal();
+
+      return false;
+    }
+  });
+
   $("[data-is='contactForm']").submit(function() {
     form = $(this);
     $.ajax({
@@ -27,7 +37,7 @@ $(document).on('turbolinks:load', function(){
       },
       data: {
         listing_id: window.listingId,
-        message: form.find("[name='message']").val()
+        content: form.find("[name='message']").val()
       }
     }).done(function() {
       $("[data-is='contactModal']").modal('hide');
@@ -38,6 +48,14 @@ $(document).on('turbolinks:load', function(){
 
   $("[data-do='setLocale']").change(function() {
     window.location.href = $(this).val();
-  })
+  });
+
+  $(document).on("keypress", "[data-is='chat']", function(event) {
+    if (event.keyCode === 13) { // return/enter = send
+      App.chat.speak(event.target.value);
+      event.target.value = '';
+      return event.preventDefault();
+    }
+  });
 
 })

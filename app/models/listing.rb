@@ -3,6 +3,7 @@ class Listing < ApplicationRecord
 
   belongs_to :category
   belongs_to :user
+  has_many :conversations
 
   def self.search(args)
     Listing.where('title LIKE :query', query: "%#{args[:keywords]}%")

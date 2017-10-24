@@ -20,6 +20,7 @@ Dir[Rails.root.join('test/support/**/*.rb')].each { |f| require f }
 class ActiveSupport::TestCase
   extend Minitest::Spec::DSL
   include Rack::Test::Methods
+  include Devise::Test::IntegrationHelpers
   include Rails.application.routes.url_helpers
   include Capybara::Email::DSL
 

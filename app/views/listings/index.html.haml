@@ -13,7 +13,9 @@
         .clearfix
           %br/
     = link_to t('contact'), new_user_session_path, class: "btn btn-primary pull-right", data: {do: 'showContactModal', user: "#{current_user.try(:id)}", id: element.id}
+    = link_to "Chat", new_user_session_path, class: "btn btn-primary pull-right", data: {do: 'showChatModal', user: "#{current_user.try(:id)}", id: element.id}
     .price
       €#{element.price}
 
 = render partial: 'modals/contact'
+= render partial: 'modals/chat'
